@@ -8,14 +8,12 @@ async function main() {
 
 
 
-        json.forEach((item, index) => { 
-        if (index<100){
-        let img = document.createElement('img');
-        //img.style = 'position:fixed;top:10px;left:10px;width:100px';
-        document.body.append(img);
-        img.src = item.url
-        }
-    })
+     for (var i = 0; i < json.length; i++) {
+            let img = document.createElement('img');
+           // img.style = 'position:fixed;top:10px;left:10px;width:100px';
+            document.body.append(img);
+            img.src = json[i].url
+            }
 
   
 }
