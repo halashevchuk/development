@@ -8,11 +8,15 @@ async function main() {
 
 
 
-    for (const i in json) {
+     let s = 0;
+
+      while (s < json.length) {
+        s++;
         let img = document.createElement('img');
-        img.style = 'position:fixed;top:10px;left:10px;width:100px';
+        //img.style = 'position:fixed;top:10px;left:10px;width:100px';
         document.body.append(img);
-        img.src =json[i].url
+        img.src =json[s].url
       }
+
 }
 main();
