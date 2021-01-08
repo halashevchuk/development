@@ -5,14 +5,16 @@ async function main() {
 
     let json = await response.json()
 
- let s = 0;
+    var text = "";
+    var i = 0;
+    do {
 
-      while (s < json.length) {
-        s++;
+        i++;
         let img = document.createElement('img');
         //img.style = 'position:fixed;top:10px;left:10px;width:100px';
         document.body.append(img);
-        img.src =json[s].url
-      }
+        img.src = json[i].url
+    }
+    while (i < json.length);
 }
 main();
