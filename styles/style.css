@@ -1,0 +1,31 @@
+
+ * {
+    margin: 0;
+    padding: 0;
+    }
+
+    .rating
+{
+  
+	border: 1px solid black;
+    height: 50px;
+    width: 300px;
+    display: inline; 
+}
+
+.rating-item 
+{
+    width: 40px;
+    height : 40px;
+    background: #f447ff;
+    border: 1px solid #000; 
+    /* padding: 3px; */
+    float: left;
+    margin: 5px;
+}
+
+.rating-item.active
+{
+    
+    background:rgb(86, 255, 71)
+}
